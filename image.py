@@ -10,6 +10,7 @@ class MemeCreator:
 		draw = ImageDraw.Draw(image)
 		width_image, height_image = image.size
 		if center_x:
+			x = int((width_image - font_size * len(text) / 1.9) / 2)
 		if center_y:
 			y = (height_image - font_size) / 2
 
